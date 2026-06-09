@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Parables - Start Your Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a2540;     /* বায়ারের মূল সাইটের নেভি ব্লু */
+            --bg: #ffffff;          /* ক্লিন হোয়াইট ব্যাকগ্রাউন্ড */
+            --accent: #d4af37;      /* আভিজাত্যের জন্য গোল্ডেন টোন */
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f4f4f4;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .video-wrapper {
+            position: relative;
+            cursor: pointer;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .thumbnail {
+            width: 100%;
+            display: block;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.9;
+        }
+
+        .play-icon::after {
+            content: '';
+            border-left: 15px solid #fff;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin-left: 4px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="asset/img/jesu.png" alt="Logo" class="logo">
+        <h1 class="hero-title">Discover the Parables</h1>
+        
+        <div class="video-wrapper" onclick="window.open('https://www.youtube.com/watch?v=5KGNhgTGcC4', '_blank')">
+            <img src="https://img.youtube.com/vi/5KGNhgTGcC4/maxresdefault.jpg" alt="Video" class="thumbnail">
+            <div class="play-icon"></div>
+        </div>
+        
+        <a href="scripture.html" class="cta-button">Watch Now & Start Your Journey</a>
+    </div>
+</body>
+</html>

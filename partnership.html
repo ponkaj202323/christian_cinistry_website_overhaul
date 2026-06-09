@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Laborer | Partner With Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a2540;     /* বায়ারের মূল নেভি ব্লু */
+            --bg-color: #f8f9fa;
+            --accent: #d4af37;      /* গোল্ডেন টোন */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .partnership-container {
+            max-width: 450px;
+            width: 100%;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: #f4f7f9;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            background-color: #1a3a5a;
+            box-shadow: 0 10px 20px rgba(10,37,64,0.2);
+        }
+
+        .no-card-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="partnership-container">
+        <h2>Become a Laborer</h2>
+        <div class="highlight-box">
+            Get 40 Days of Full Access - Completely Free!
+        </div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <button type="submit" class="submit-btn">Register for Free Access</button>
+            <p class="no-card-text">✔ No credit card required. Instant access.</p>
+        </form>
+    </div>
+</body>
+</html>
